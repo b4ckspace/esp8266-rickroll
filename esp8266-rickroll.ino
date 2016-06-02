@@ -1,5 +1,4 @@
 #include <ESP8266WiFi.h>
-#include <WiFiClient.h> 
 #include <SimpleTimer.h>
 
 #define CHANGE_SSID_MS  (10 * 1000)

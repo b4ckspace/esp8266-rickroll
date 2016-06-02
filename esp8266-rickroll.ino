@@ -22,7 +22,7 @@ void setup() {
   WiFi.mode(WIFI_AP);
 
   timer.setInterval(CHANGE_SSID_MS, []() {
-    WiFi.begin(phrases[currentPhrase], PASSWORD);
+    WiFi.softAP(phrases[currentPhrase], PASSWORD);
     currentPhrase = (currentPhrase++) % ARRAY_SIZE(phrases);
   });
 }

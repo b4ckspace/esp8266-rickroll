@@ -19,11 +19,7 @@ const char* phrases[] = {
 };
 
 void setup() {
-  
   delay(1000);
-  Serial.begin(115200);
-  
-  WiFi.hostname("ESP-RickRoll");
   WiFi.mode(WIFI_AP);
 
   timer.setInterval(CHANGE_SSID_MS, []() {
